@@ -1,0 +1,10 @@
+/*
+属性セレクタ
+
+属性のどれかの場合は、チルダをイコールの前につけて引っ掛ける文字列を指定する
+*/
+
+/*a[title] {color:skyblue;}*/
+/*a[href="http://google.com"] {color:orange;}*/
+a[class~="search"] {color:violet;}
+

@@ -1,0 +1,29 @@
+/*
+marginもpaddingと同じように設定できる。
+マージンは相殺するところがある。
+box1のbottomとbox2のtopの大きい方でマージンが切られる。
+
+padding-top: 10px;
+padding-top: 10px;
+padding-top: 10px;
+padding-top: 10px;
+
+padding:
+  all
+  top/bottom right/left
+  top right/left bottom
+  top right left bottom
+*/
+
+body{margin: 0;}
+div {
+  background: silver;
+/*  padding: 10px 50px;
+*/  padding: 10px 20px 30px 50px;
+}
+
+div#box1 {background: silver;
+  margin: 10px 20px 30px}
+
+div#box2 {background: orange;
+  margin: 20px }

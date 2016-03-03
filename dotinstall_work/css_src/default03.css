@@ -1,0 +1,10 @@
+/*
+要素全体を透明にしたい
+opacity 0-1 0が透明、1が不透明
+*/
+body { background: skyblue; }
+
+img {
+  border: 7px solid blue;
+  opacity: 0.3;
+}

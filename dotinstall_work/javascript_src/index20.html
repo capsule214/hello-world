@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>javascriptの練習</title>
+  </head>
+  <body>
+    <script>
+      /*
+        組み込みオブジェクト
+          - String
+          - Array
+          - Math
+          - Date
+      */
+      var a = new Array(100, 300, 200);
+      // var a = [100, 300, 200]
+      console.log(a.length);
+      // 要素追加
+      // unshift -> array <- push
+      // shift <- array -> pop
+      a.push(500);
+      console.log(a);
+      a.splice(1, 2, 800, 1000); // 1の位置から2個削除して800と1000を追加する
+      console.log(a);
+    </script>
+<!--
+ -->
+  </body>
+</html>

@@ -1,0 +1,26 @@
+/*
+擬似クラス
+- :first-child;
+リストの何番目のスタイル指定に使う。
+
+さらに、連続していなくてもn番目のp要素を指定する方法として、
+p:first-of-type
+p:last-of-type
+p:nth-of-type(3)
+p:nth-last-of-type
+h2:only-of-type
+がある。
+*/
+
+/*
+li:last-child
+li:nth-child(3)
+li:nth-child(odd)
+li:nth-child(even)
+li:nth-last-child(4) 最後からn番目
+li:only-child 子要素が1つしかないもの指定
+ */
+li:only-child
+{
+  background: violet;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>おみくじ</title>
+  </head>
+  <body>
+    <h1>おみくじ</h1>
+    <input type="button" value="あなたの運勢は?" onclick="getOmikuji();">
+    <p>あなたの運勢は...<span id="result"></span></p>
+    <script>
+      function getOmikuji() {
+        var omikuji = ["大吉","中吉","小吉","凶","大凶"];
+        // 0 - n
+        // Math.floor(Math.random() * (n + 1))
+        // Math.random()は0-1までの乱数を発生させる
+        var result = Math.floor(Math.random() * omikuji.length);
+        // alert(omikuji[result]);
+        document.getElementById('result').innerHTML = omikuji[result];
+      }
+    </script>
+  </body>
+</html>

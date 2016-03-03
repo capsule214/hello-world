@@ -1,0 +1,18 @@
+/*
+セレクタについて詳しく
+a, b 指定セレクタ
+a b 階層(aとその配下にあるb)
+a > b 階層(aの配下にあるb)
+a + b aの次に来るb要素(最初のaはスルーでその次のb要素)
+ab
+*/
+
+/*
+*/
+h1, p {color:skyblue;}
+/*
+div span {color:skyblue;}
+div > span {color:skyblue;}
+p + p {color:skyblue;}
+p.points {color:skyblue;}
+*/

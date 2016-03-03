@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>javascriptの練習</title>
+  </head>
+  <body>
+    <script>
+      /*
+        組み込みオブジェクト
+          - String
+          - Array
+          - Math
+          - Date
+      */
+
+      console.log(Math.PI);
+      console.log(Math.ceil(5.3)); //切り捨て
+      console.log(Math.floor(5.3)); // 切り上げ
+      console.log(Math.round(5.3)); // 四捨五入
+      console.log(Math.random()); // ランダム値
+
+      var d = new Date();
+      var d = new Date(2014, 1, 11, 10, 20, 30); //Monthは0から始まることに注意！！1は2月。
+      console.log(d.getFullYear());
+      console.log(d.getMonth()); // 値は2月だけど1が取得できる。
+    </script>
+<!--
+ -->
+  </body>
+</html>

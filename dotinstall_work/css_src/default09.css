@@ -1,0 +1,16 @@
+/*
+角丸
+ */
+div {
+  width: 200px;
+  height: 200px;
+  /*background: skyblue;*/
+
+  /* 画像url指定と○の組み合わせで丸いアイコン表現も可能！ */
+  background: skyblue url('carp.jpg');
+
+  /*border-radius: 30px / 20px;*/
+  /*border-bottom-right-radius: 30px;*/
+  /*border-radius: 10px 20px 30px;*/
+  border-radius: 20%; /* %でも指定可能。50%で正円になる */
+}

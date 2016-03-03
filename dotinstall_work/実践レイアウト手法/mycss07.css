@@ -1,0 +1,160 @@
+/* mycss07.css */
+html {
+  background-image: url('grey.png');
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Verdana, Arial;
+  font-size: 14px;
+}
+
+body > #container {
+  height: auto;
+}
+
+#container {
+  min-height: 100%;
+  height: 100%;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #eee;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5)
+}
+
+#header {
+  margin-bottom: 15px;
+}
+
+#menu {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#menu ul>li {
+  float: left;
+  width: 100px;
+  font-size: 13px;
+  text-align: center;
+  padding: 4px;
+  background: #ccc;
+  margin-right: 10px;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+
+/* マウスオーバーしたときの背景色 */
+#menu ul>li:hover {
+  background: #ddd;
+}
+
+/* テキストのリンク下線を消す、ブロック全体でクリックできるようにする */
+#menu ul>li>a {
+  text-decoration: none;
+  display: block;
+}
+
+#main {
+  overflow: hidden;
+}
+
+#contents {
+  float: left;
+  width: 400px;
+  margin-bottom: 15px;
+}
+#sidebar {
+  float: right;
+  width: 180px;
+}
+
+
+#footer {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 10px 0 20px;
+}
+
+/* h2, h3 */
+h2, h3 {
+  font-weight: bold;
+
+}
+
+h2 {
+  font-size: 16px;
+  border-left: 5px solid #ccc;
+  padding: 3px 0 3px 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  border-bottom: 1px solid #ccc;
+  padding: 3px 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+/* ul.products */
+ul.products {
+  margin-bottom: 15px;
+}
+ul.products>li:last-child{
+  border: none;
+}
+ul.products>li {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+ul.products>li>img {
+  float: left;
+  width: 60;
+}
+ul.products>li>p {
+  margin-left: 70px;
+}
+
+/* div.sample */
+div.sample {
+  float: right;
+  width: 66px;
+  margin-left: 10px;
+  position: relative; /* newの文字を右上に重ねるための記述 */
+}
+
+div.sample>p {
+  font-size: 10px;
+}
+
+div.sample>img {
+  padding: 2px;
+  background: #fff;
+  border: 1px solic #ccc;
+}
+
+
+.badge {
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px 3px;
+  /* newの文字を右上に重ねるための記述 */
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+ul.submenu>li {
+  background: url('dotinstall.png') no-repeat;
+  padding: 0 0 5px 20px; /* 上右下左 */
+}

@@ -1,0 +1,17 @@
+/*
+値
+  - 長さ
+    - px, em. %, rem
+  rem:html基準でサイズセットしてくれる;
+*/
+html {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 0.5rem;
+}

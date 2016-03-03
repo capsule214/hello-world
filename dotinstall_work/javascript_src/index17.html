@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>javascriptの練習</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Ctrl + Alt + J でjavascriptコンソール表示できる
+      オブジェクト
+        名前と値
+      */
+      var user = {
+        email: "taguchi@gmail.com", //プロパティ
+        score: 80,
+        greet: function(name) {  // オブジェクトのメソッドと呼ぶ
+          console.log("hello, " + name + " from " + this.email); // thisはオブジェクト自身にアクセスする
+        }
+      };
+
+      /* オブジェクトへは2通りのアクセス方法 */
+      console.log(user["email"]); // プロパティ名でアクセス
+      console.log(user.email);    // ドットでプロパティ名にしてもOK
+
+      user.score = 100;
+      console.log(user);
+
+      user.greet("Tom");
+
+    </script>
+  </body>
+</html>

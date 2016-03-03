@@ -1,0 +1,29 @@
+/*
+transition
+transition-timing-function
+- ease
+- ease-in
+- ease-out
+- ease-in-out
+*/
+
+div {
+  width: 100px;
+  height: 50px;
+  background: skyblue;
+
+/*  transition-property:all;
+  transition-duration:2s;
+  transition-timing-function:ease;
+  transition-delay:0.5s;
+*/
+
+/* 一気に記述する方法もある */
+transition: all 2s ease 0.5s;
+}
+
+div:hover {
+  width: 200px;
+  height: 50px;
+  background: blue;
+}

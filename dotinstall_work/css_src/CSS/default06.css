@@ -1,0 +1,15 @@
+/*
+セレクタ
+擬似クラス
+*/
+
+/* CSS2.Xの書き方。CSS3では何番目というのが指定できるらしい。 */
+ul li:first-child {color: skyblue;}
+
+/* 擬似クラス。順番はこのとおりに書く必要がある。 */
+a:link{color: violet;}
+a:visited {color: orange;}
+a:hover {color: pink;}
+a:active {color: red;}
+
+input:focus {background:skyblue;}

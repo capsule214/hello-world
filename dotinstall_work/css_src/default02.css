@@ -1,0 +1,32 @@
+/*
+色
+ hsl/hslaを覚えておくと、ちょっと暗くしたいとかが
+ 簡単に変更できる。
+  - rbga
+    red, green, blue, alpha(0-1)1が不透明
+  - hsl / hsla
+    - Hue 色相 0-360
+    - Saturation 彩度 0-100%
+    - Lightness 明るさ 0-100%
+    - Alpha 0-1
+*/
+div {
+  width: 100px;
+  height: 50px;
+}
+
+#box1 {
+  background: rgb(255, 100, 100);
+}
+
+#box2 {
+  background: rgba(255, 100, 100, .2);
+}
+
+#box3 {
+  background: hsla(210, 100%, 50%, .5);
+}
+
+#box4 {
+  background: hsla(210, 100%, 40%, .5);
+}

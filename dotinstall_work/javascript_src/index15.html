@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>javascriptの練習</title>
+  </head>
+  <body>
+    <script>
+      /*
+      タイマー処理
+        setInterval 一定時間で処理を繰り返す
+        setTimeout  指定時間経過後処理を1回だけ実行する
+        clearTimeout(タイマーID) タイマーIDで指定のタイマーを停止する
+      */
+      var i = 0;
+      function show() {
+        console.log(i++);
+        var tid = setTimeout(function() {
+          show();
+        }, 1000);
+        if ( i > 3) {
+          clearTimeout(tid);
+        }
+      }
+      show();
+
+    </script>
+  </body>
+</html>

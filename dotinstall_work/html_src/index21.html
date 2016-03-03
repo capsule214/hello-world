@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>はじめてのHTML</title>
+  </head>
+  <body>
+  <!--
+  select
+    multipleで複数リスト表示できる。デフォルトは4つ。sizeもつければその数分表示される
+  option
+  -->
+    <article>
+      <h1>アンケート</h1>
+      <form action="survey.php" method="post">
+        <p>メールアドレス： <input type="text" name="email" disabled></p>
+        <p>City:
+        <select name="city">
+          <option value="tokyo">Tokyo</option>
+          <option value="osaka">Osaka</option>
+          <option value="nagoya">Nagoya</option>
+          <option value="kyoto">Kyoto</option>
+          <option value="fukuoka">Fukuoka</option>
+          <option value="hiroshima" selected>Hiroshima</option>
+        </select>
+        </p>
+        <p>City:
+        <select name="city" multiple size="5">
+          <option value="tokyo">Tokyo</option>
+          <option value="osaka">Osaka</option>
+          <option value="nagoya">Nagoya</option>
+          <option value="kyoto">Kyoto</option>
+          <option value="fukuoka">Fukuoka</option>
+          <option value="hiroshima" selected>Hiroshima</option>
+        </select>
+        </p>
+        <p> <input type="submit" value="送信！" disabled></p>
+      </form>
+    </article>
+  </body>
+</html>

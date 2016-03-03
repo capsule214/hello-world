@@ -1,0 +1,18 @@
+/*
+box-shadow
+text-shadow
+ */
+body { background: #eee; }
+
+div {
+  width: 200px;
+  height: 100px;
+  background: #fff;
+  /* 影のx方向 y方向 ぼかす割合 影の大きさ 色 */
+  box-shadow: 10px 20px 4px 10px rgba(0,0,0, .4) inset,
+  10px 20px 4px 10px skyblue;
+}
+
+h1 {
+  text-shadow: 2px 2px 0px rgba(0,0,0, .4);
+}

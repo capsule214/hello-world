@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>javascriptの練習</title>
+  </head>
+  <body>
+    <script>
+      /*
+      関数を変数に割り当てることで、無名関数にできる。
+      }
+      */
+      // 無名関数・匿名関数という。
+      var hello = function(name) {
+        var msg = "hello " + name;
+        return msg;
+      };
+      var greet = hello("Tom");
+      console.log(greet);
+
+    </script>
+  </body>
+</html>

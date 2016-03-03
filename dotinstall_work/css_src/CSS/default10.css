@@ -1,0 +1,27 @@
+/*
+ボックスモデル
+
+Element自体の幅高さ→width/height
+枠線：border
+枠線とElementの間：padding
+枠線の外側の領域：margin
+*/
+body, html {height: 100%;}
+div {
+  background: silver;
+/*  width: 200px;
+*/
+  width: 50%;
+/*  height: 100px;
+*/
+height: 50%;
+
+/*  border-color: orange;
+  border-width: 4px;
+  border-style: dotted;
+*/
+/*  border: orange 4px dotted;
+*/
+  border-top: orange 4px dotted;
+}
+

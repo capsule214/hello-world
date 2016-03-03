@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>はじめてのHTML</title>
+  </head>
+  <body>
+  <!--
+  form
+  ユーザからの入力受け付ける
+    action : どこに送るか？
+    method : get / post
+  input 入力。typeによってテキスト入力だったり、送信ボタンだったりする。
+  -->
+    <article>
+      <h1>アンケート</h1>
+      <form action="survey.php" method="post">
+        <p>メールアドレス： <input type="text" name="email"></p>
+        <p> <input type="submit" value="送信！"></p>
+      </form>
+    </article>
+  </body>
+</html>

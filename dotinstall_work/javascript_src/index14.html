@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>javascriptの練習</title>
+  </head>
+  <body>
+    <script>
+      /*
+      即時関数。宣言後、コールをしなくても呼び出せる。
+      全体を括弧で囲み、引数付けるなど。
+      */
+      (function hello(name) {
+        console.log("hello");
+      })("Tom");
+
+      // 他からアクセスできないので、安全なプログラムを書ける。複雑なコードを書く場合は心がけるとよい。
+      (function() {
+      var x = 10,
+          y = 20;
+          console.log(x + y);
+      })();
+    </script>
+  </body>
+</html>

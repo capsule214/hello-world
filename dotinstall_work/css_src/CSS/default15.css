@@ -1,0 +1,14 @@
+/*
+list
+-list-style-type: disc/circle/square/decimal/lower-alpha;
+- list-style-image: 画像ファイル名;
+- list-style-position: inside/outside;マーカー
+- list-style: 一気に設定できる;
+*/
+
+ul {
+/*  list-style: inside decimal;
+/*  list-style: outside lower-alpha;
+*/
+  list-style: url('smile.jpg') circle;
+}
